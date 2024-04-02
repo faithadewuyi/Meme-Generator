@@ -87,6 +87,9 @@ export default {
         14: "112px",
         16: "120px",
       },
+      gridTemplateRows: {
+        '40': 'repeat(2, 40px)',
+      },
       zIndex: {
         1: "1",
         2: "2",
