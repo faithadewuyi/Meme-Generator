@@ -1,9 +1,15 @@
-
+import MemesData from "./MemesData"
 const Meme = () => {
+
+  function getMemeImage(){
+    const memesArray = MemesData.data.memes
+    const randomNumber = Math.floor(Math.random() * memesArray.length) 
+    const url = memesArray[randomNumber].url
+  }
   return (
     <>
       <main className="p-4 justify-center items-center">
-          <form className="flex flex-col gap-4 items-center w-full max-w-md mx-auto font-catamara">
+          <div className=" form flex flex-col gap-4 items-center w-full max-w-md mx-auto font-catamara">
           <div className="flex w-full gap-4 ">
             <label>Top Text
             <input
@@ -20,9 +26,10 @@ const Meme = () => {
             />
             </label>
           </div>
-          <button className="px-4 py-2 bg-secblue text-white">Fetch a fresh meme picture 🖼</button>
+          <button onClick={getMemeImage()}
+          className="px-4 py-2 bg-secblue text-white">Fetch a fresh meme picture 🖼</button>
                 
-            </form>
+            </div>
         </main>
     </>
   )
