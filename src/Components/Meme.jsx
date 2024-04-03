@@ -1,10 +1,12 @@
 import MemesData from "./MemesData"
-const Meme = () => {
+import {useState} from "react"
 
+const Meme = () => {
+  const [memeImage, setMemeImage] = useState("")
   function getMemeImage(){
-    const memesArray = MemesData.data.memes
+    const memesArray= MemesData.data.memes
     const randomNumber = Math.floor(Math.random() * memesArray.length) 
-    const url = memesArray[randomNumber].url
+    setMemeImage(memesArray[randomNumber].url)
   }
   return (
     <>
@@ -30,6 +32,7 @@ const Meme = () => {
           className="px-4 py-2 bg-secblue text-white">Fetch a fresh meme picture 🖼</button>
                 
             </div>
+            <img src={memeImage} />
         </main>
     </>
   )
