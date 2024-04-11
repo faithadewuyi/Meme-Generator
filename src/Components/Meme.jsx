@@ -13,7 +13,7 @@ const Meme = () => {
               className="w-full p-2 border border-solid border-gray pl-1 rounded-md"
             />
             </label >
-            <label>Bottom Text
+            <label>Bottom-Text
             <input
               type="text"
               placeholder="Bottom Text"
@@ -23,7 +23,8 @@ const Meme = () => {
           </div>
           <button 
           className="px-4 py-2 bg-secblue text-white">Fetch a fresh meme picture 🖼</button>
-                
+            
+
             </div>
             <img src="" />
         </main>
