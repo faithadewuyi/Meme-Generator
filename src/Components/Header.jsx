@@ -7,7 +7,7 @@ const Header = () => {
       <img src={troll}
       className="h-full mr-1"
       ></img>
-      <h2 className= "text-red-500 text-[1.255rem] mr-auto">Meme Generator</h2>
+      <h2 className= "text-red-500 text-[1.255rem] mr-auto">Memes Generator</h2>
       <h4 className="text-[0.75rem] font-bold">Get enough Memes</h4>
     </header>
       
